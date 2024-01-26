@@ -1,0 +1,3 @@
+-- Devices
+INSERT INTO PAYMENT (name, last_name, phone, email, payment_name, payment_description, start_date, end_date, amount, status) VALUES ( 'Alejandro', 'Ushca', '0989898989', 'alejo@hotmail.com', 'Pago Credito', 'Primer Pago', '2023-12-29 17:56:31.292000 +00:00', '2023-07-30 17:56:31.292000 +00:00', 1000, 'PENDING');
+INSERT INTO PAYMENT (name, last_name, phone, email, payment_name, payment_description, start_date, end_date, amount, status) VALUES ( 'Alejandro', 'Ushca', '0989898989', 'alejo@hotmail.com', 'Pago Credito', 'Segundo Pago', '2023-07-26 17:56:31.292000 +00:00', '2023-08-15 17:56:31.292000 +00:00', 2000, 'PAID');

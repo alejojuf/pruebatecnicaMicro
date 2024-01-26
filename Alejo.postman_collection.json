@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "1db93aa0-7206-4d41-a8c2-8dba84c25324",
+		"name": "Alejo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30322862"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/payment/monthly",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/payment/monthly",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payment",
+						"monthly"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/payment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Alejandro\",\n      \"lastName\" : \"Ushca\",\n      \"phone\" : \"0989898989\",\n      \"email\" : \"alejo@hotmail.com\",\n      \"curp\" : null,\n      \"rfc\" : null,\n      \"paymentName\" : \"Pago Credito\",\n      \"paymentDescription\" : \"Primer Pago\",\n      \"startDate\" : \"2024-01-13T17:56:31.292Z\",\n      \"endDate\" : \"2024-12-29T17:56:31.292Z\",\n      \"amount\" : 4000.00,\n      \"status\" : \"PENDING\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/payment",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/payment/3",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\": \"PAID\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/payment/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payment",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/payment/monthly_group",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/payment/monthly_group",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payment",
+						"monthly_group"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/payment/average?averagePeriod=BIWEEKLY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/payment/average?averagePeriod=BIWEEKLY",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payment",
+						"average"
+					],
+					"query": [
+						{
+							"key": "averagePeriod",
+							"value": "BIWEEKLY"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
